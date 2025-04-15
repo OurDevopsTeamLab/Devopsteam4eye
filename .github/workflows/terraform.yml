@@ -28,9 +28,10 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-        # cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
         #- name: Azure CLI Login
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+         - name: Export Azure Login Credentials
+            #creds: ${{ secrets.AZURE_CREDENTIALS }}
             run: |
                  echo "ARM_CLIENT_ID = ${{ secrets.AZURE_CLIENT_ID }}">> $ GITHUB_ENV
                  echo "ARM_TENANT_ID = ${{ secrets.AZURE_TENANT_ID }}">> $ GITHUB_ENV
