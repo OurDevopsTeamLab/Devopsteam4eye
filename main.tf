@@ -4,8 +4,17 @@ terraform {
       source = "hashicorp/azurerm"
       version = "4.26.0"
     }
+
+  backend "azurerm" {
+    resource_group_name   = "Daksh1"
+    storage_account_name  = "storageonetwofour"
+    container_name        = "container"
+    key                   = "ravi.terraform.tfstate"
   }
 }
+
+  }
+
 
 provider "azurerm" {
   features {}
@@ -15,7 +24,7 @@ provider "azurerm" {
 }
 
 
-# resource "azurerm_resource_group" "Ravi1" {
-#   name     = "Daksh1"
+# resource "azurerm_resource_group" "Ravi2" {
+#   name     = "Daksh2"
 #   location = "Central India"
 # }
