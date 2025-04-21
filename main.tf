@@ -24,6 +24,6 @@ resource "azurerm_resource_group" "BGP" {
   location = "Central India"
 }
 resource "azurerm_resource_group" "BGP1" {
-  name     = "BRvv"
+  name     = "UPwale"
   location = "Central India"
 }
