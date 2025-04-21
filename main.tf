@@ -19,7 +19,7 @@ provider "azurerm" {
 }
 
 
-# resource "azurerm_resource_group" "Ravi2" {
-#   name     = "Daksh2"
-#   location = "Central India"
-# }
+resource "azurerm_resource_group" "BGP" {
+  name     = "BR10"
+  location = "Central India"
+}
