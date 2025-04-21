@@ -60,6 +60,7 @@
 name: 'MyFirstPipeline'
 
 on:
+  workflow_dispatch:
   # push:
   #   branches: [ "main" ]
 
