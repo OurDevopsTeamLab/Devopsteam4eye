@@ -61,7 +61,7 @@ name: 'MyFirstPipeline'
 
 on:
   push:
-    branches: [ "main" ]
+    branches: 
 
 permissions:
   contents: read
